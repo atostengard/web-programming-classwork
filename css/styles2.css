@@ -1,0 +1,404 @@
+* {box-sizing: border-box}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style the tab */
+.headerTab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #C1C1C1;
+    color: white;
+}
+
+/* Style the buttons inside the tab */
+.headerTab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.headerTab button:hover {
+    background-color: #00A5CF;
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.headerTab button.active {
+    background-color: #00A5CF;
+    color: white;
+}
+
+/* Style the tab content */
+.headerTabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 700px;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    background-color: #C1C1C1;
+    width: 15%;
+    min-height: 90%;
+    max-height: 90%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 5px;
+    overflow: scroll;
+
+
+}
+
+/* Style the buttons inside the tab */
+.btn {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 25px;
+    outline: none !important;
+}
+
+/* Change background color of buttons on hover */
+.btn:hover {
+    background-color: #9FFFCB;
+    outline: none !important;
+    color: white;
+}
+
+.btn.active {
+  background-color: #9FFFCB;
+  color: black;
+  outline: none !important;
+}
+
+/* Add a new list button style */
+.add-btn {
+  display: block;
+  background-color: #00A5CF;
+  color: black;
+  padding: 12px 6px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  outline: none !important;
+}
+
+.add-btn:hover {
+  background-color: #C1C1C1;
+  color:black;
+  outline: none !important;
+}
+
+/*Input field for new list title */
+#newList {
+  width: 100%;
+  margin-top: 2%;
+  border-color: #00A5CF;
+  border-radius: 0;
+  
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: inline-block;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #C1C1C1;
+    width: 50%;
+    border-left: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    font-size: 28px;
+    height: 90%;
+    border-radius: 5px;
+
+}
+
+/*to do */
+*{
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+#todoList {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/* Style the list items */
+#todoList li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #79B4A9;
+  font-size: 18px;
+  transition: 0.2s;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  margin-left: 10%;
+  width: 75%;
+  text-align: center;
+  
+/*   make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+#todoList li:nth-child(odd) {
+  background: #58A4B0;
+}
+
+/* Darker background-color on hover */
+#todoList li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+#todoList li.checked {
+  background: #9FFFCB;
+  color: black;
+  text-decoration: line-through;
+}
+
+/*Add a "checked" mark when clicked on*/                                       
+#todoList li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: black;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+/*  background-color: #f44336;*/
+  color: black;
+}
+
+/* Style the header */
+.header {
+/*  background-color: #f44336;*/
+  padding: 30px 40px;
+/*  color: white;*/
+/*  text-align: center;*/
+  color: #25283D;
+  margin-left: 150px;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+#myInput {
+  margin: 0;
+  border-color: #00A5CF;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/*Style the "Add" button*/
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #00A5CF;
+  color: white;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  height: 46px;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+
+/*Where the pet will go */
+.circle-listpage {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    border: solid;
+    border-color: #C1C1C1;
+    padding: 0px 12px;
+    margin: 10% 2% 2% 0;
+}
+
+#pet {
+    margin-left: 600px;
+    margin-top: -400px;
+    width: 400px;
+  
+}
+
+/*----------------------Next Page------------------*/
+
+
+.petTab {
+    float: left;
+    background-color: #C1C1C1;
+    width: 15%;
+    height: 600px;
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.petTab p {
+
+    background-color: #00A5CF;
+    color: white;
+    display: block;
+    padding: 22px 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;    
+}
+
+.petTab button {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    background-color: #9FFFCB;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.petTab button:hover {
+  background-color: #79B4A9;
+}
+
+.petContent {
+    display: block;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #C1C1C1;
+    width: 79%;
+    border-left: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    font-size: 28px;
+    height: 600px;
+}
+
+#pet_big {
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.circle {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    border: solid #C1C1C1;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+/*-----------------Next Page ---------------------*/
+
+.row {
+    margin-left: 225px;
+    margin-right: 225px;
+    padding: 5px 5px 5px 5px;
+}
+
+.col-sm-4 {
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 300px;
+}
+
+.col-sm-4 button {
+    background-color: gray;
+    color: white;
+}
+
+#balance {
+    margin-left: 250px;
+}
+
+.store-btn {
+
+  display: block;
+    background-color: inherit;
+    color: black;
+    padding: 5px 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    outline: none !important;
+
+}
+
+.store-btn:hover {
+  background-color: #C1C1C1;
+  color:black;
+  outline: none !important;
+}
